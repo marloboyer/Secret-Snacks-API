@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   get "/snacks" => "snacks#index"
   get "/reviews" => "reviews#index"
   get "/users" => "users#index"
+
+  get "/snacks/:id" => "snacks#show"
+  get "/locations/:id" => "locations#show"
+  get "/reviews/:id" => "reviews#show"
 end

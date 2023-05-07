@@ -13,4 +13,9 @@ class ReviewsController < ApplicationController
     )
     render json: @reviews.as_json
   end
+
+  def show
+    @reviews = Review.find_by(id: params[:id])
+    render json: @reviews.as_json
+  end
 end

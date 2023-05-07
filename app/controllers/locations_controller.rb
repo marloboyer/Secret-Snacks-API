@@ -12,4 +12,9 @@ class LocationsController < ApplicationController
     )
     render json: @locations.as_json
   end
+
+  def show
+    @locations = Location.find_by(id: params[:id])
+    render json: @locations.as_json
+  end
 end
