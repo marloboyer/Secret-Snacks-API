@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  snack_id: 1
+  user_id: 1
+  note: MyString
+  snack_rate: 1
+
+two:
+  snack_id: 1
+  user_id: 1
+  note: MyString
+  snack_rate: 1
