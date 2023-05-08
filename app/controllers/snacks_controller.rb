@@ -15,7 +15,24 @@ class SnacksController < ApplicationController
   end
 
   def show
-    @snacks = Snack.find_by(id: params[:id])
-    render json: @snacks.as_json
+    @snack = Snack.find_by(id: params[:id])
+    render json: @snack.as_json
+  end
+
+  def update
+    @snack = Snack.find_by(id: params[:id])
+    @snack.update(
+      name: params[:name] || @snack.name,
+      brand: params[:brand] || @snack.brand,
+      user_id: params[:user_id] || @snack.user_id,
+      snack_image: params[:snack_image] || @snack.snack_image,
+    )
+    render json: @snack.as_json
+  end
+
+  def destroy
+    @snack = Snack.find_by(id: params[:id])
+    @snack.destroy
+    render json: { message: "Snack destroyed successfully" }
   end
 end

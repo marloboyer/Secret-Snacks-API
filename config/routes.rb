@@ -13,4 +13,12 @@ Rails.application.routes.draw do
   get "/snacks/:id" => "snacks#show"
   get "/locations/:id" => "locations#show"
   get "/reviews/:id" => "reviews#show"
+
+  patch "/snacks/:id" => "snacks#update"
+  patch "/locations/:id" => "locations#update"
+  patch "/reviews/:id" => "reviews#update"
+
+  delete "/snacks/:id" => "snacks#destroy"
+  delete "/locations/:id" => "locations#destroy"
+  delete "/reviews/:id" => "reviews#destroy"
 end

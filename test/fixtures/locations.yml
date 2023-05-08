@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  snack_id: 1
   address: MyString
+  snack: one
 
 two:
   name: MyString
-  snack_id: 1
   address: MyString
+  snack: two
