@@ -1,0 +1,9 @@
+POST http://localhost:3000/twilio.json
+Content-Type: application/json
+
+{
+  "phone": "+12144937360",
+  "text_body": "There is a new snack near you!"
+}
+
+

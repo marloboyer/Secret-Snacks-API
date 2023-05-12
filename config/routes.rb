@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post "/snacks" => "snacks#create"
   post "/locations" => "locations#create"
   post "/reviews" => "reviews#create"
+  post "/twilio" => "twilio#create"
 
   get "/locations" => "locations#index"
   get "/snacks" => "snacks#index"
