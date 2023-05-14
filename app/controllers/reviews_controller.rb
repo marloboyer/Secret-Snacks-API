@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
   def index
     @reviews = Review.all
-    render json: @reviews.as_json
+    render json: @reviews.as_json(include: :snack)
   end
 
   def create
